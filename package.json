@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "start": "npx tsx src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
     "dev": "nodemon --exec tsx src/server.ts",
     "test": "vitest run",
     "test:crawler": "tsx src/test_crawler.ts",
