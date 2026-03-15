@@ -18,6 +18,7 @@
     "@google/generative-ai": "^0.24.1",
     "@prisma/client": "6.19",
     "axios": "^1.13.6",
+    "tsx": "^4.x.x",
     "bcryptjs": "^3.0.3",
     "node-base91": "^0.3.4",
     "cheerio": "^1.2.0",
