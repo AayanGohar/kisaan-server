@@ -14,13 +14,13 @@ const envCandidates = [
 const envPath = envCandidates.find((candidate) => fs.existsSync(candidate)) ?? envCandidates[0];
 dotenv.config({ path: envPath });
 
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 const server = http.createServer(app);
 setupSocket(server);
 
-server.listen(port, () => {
-  console.log(`Server listening on http://localhost:${port}`);
+server.listen(PORT, () => {
+  console.log(`Server listening on http://localhost:${PORT}`);
   console.log(`[ENV] Loaded .env from ${envPath} | NVIDIA_API_KEY=${process.env.NVIDIA_API_KEY ? "SET" : "MISSING"}`);
   start_crawler();
 });
